@@ -2,7 +2,6 @@ const TravelData = require('../models/TravelPlan')
 
 // to Get all Travel Plan
 const getTravelPlans = async (req,res)=>{
-    console.log("inside get travelplans")
     try {
         const travelPlans = await TravelData.find()
         res.status(200).json(travelPlans)
